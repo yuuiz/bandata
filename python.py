@@ -1,4 +1,6 @@
 import json
+
+banned = 0
 def main():
 	id = int(input('id>'))
 	reason = input('reason>')
