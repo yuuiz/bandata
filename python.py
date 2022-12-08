@@ -5,9 +5,9 @@ def main():
 	f1 = open('users.json').read()
 	with open('users.json', 'w') as f:
 		j = json.loads(f1)
-		print(f'old: {j}')
 		j[id] = reason
-		print(j)
+		if j[id] == reason:
+			print('updated json')
 		f.write(json.dumps(j))
 	main()
 main()
